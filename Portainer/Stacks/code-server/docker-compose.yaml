@@ -3,7 +3,7 @@ version: "2.1"
 services:
   code-server:
     image: lscr.io/linuxserver/code-server:latest
-    container_name: code_jansen_server
+    container_name: ${DOCKER_NAME}
     environment:
       - PUID=${PUID}
       - PGID=${PGID}

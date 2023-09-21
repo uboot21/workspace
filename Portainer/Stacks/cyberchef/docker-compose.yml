@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  cyber-chef:
+    image: mpepping/cyberchef:latest
+    container_name: ${DOCKER_NAME}
+    labels:
+      - 'com.centurylinklabs.watchtower.enable=true'
+    ports:
+      - ${SOURCE_PORT}:8000
+    restart: ${RESTART_POLICY}
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: ${IP_SUBNET}
