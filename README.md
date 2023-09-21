@@ -8,7 +8,7 @@ Unter Anleitungen finden sie Hilfen und Tipps zu einzelnen Punkten. Diese sind n
 # Anleitung
 
 ## 1 Github
-[a link](https://github.com/uboot21/workspace/Anleitungen/1_Githubh/README.md)
+[a link](/Anleitungen/1_GitHub/README.md)
 
 
 
