@@ -22,4 +22,4 @@ Unter Anleitungen finden sie Hilfen und Tipps zu einzelnen Punkten. Diese sind n
 
 # Portainer Stacks
 ## Stacks
-[4 Portainer Link](/Portainer/Stacks/README.md)
+[Portainer Stack Link](/Portainer/Stacks/README.md)
