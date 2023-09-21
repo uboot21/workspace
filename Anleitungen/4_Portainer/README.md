@@ -50,6 +50,7 @@ networks:
       - 'com.centurylinklabs.watchtower.enable=true'
 ```
 -> mit true oder false ein/ausschalten
+-> Siehe Installation Watchtower
 
 # Den Ordnernamen inkl. DockerStack und die Dateinamen da drin nicht ändern -> Docker Stack sind mit Portainer verbunden und der Link geht verloren
 
