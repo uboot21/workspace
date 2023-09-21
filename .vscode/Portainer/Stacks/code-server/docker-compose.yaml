@@ -1,0 +1,28 @@
+---
+version: "2.1"
+services:
+  code-server:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: code_jansen_server
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+      - PASSWORD=${PASSWORD} #optional
+      - HASHED_PASSWORD=${HASHED_PASSWORD} #optional
+      - SUDO_PASSWORD=${SUDO_PASSWORD} #optional
+      - SUDO_PASSWORD_HASH= ${SUDO_PASSWORD_HASH} #optional
+      - PROXY_DOMAIN=${PROXY_DOMAIN} #optional
+      - DEFAULT_WORKSPACE=${DEFAULT_WORKSPACE} #optional
+    volumes:
+      - /home/andre/docker/vscode/config:/config
+    ports:
+      - 9058:8443
+    restart: unless-stopped 
+    labels:
+      - 'com.centurylinklabs.watchtower.enable=true'
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 172.172.0.0/24
