@@ -19,6 +19,8 @@ Unter Anleitungen finden sie Hilfen und Tipps zu einzelnen Punkten. Diese sind n
 ## 4 Portainer
 [4 Portainer Link](/Anleitungen/4_Portainer/README.md)
 
+## 5 Stacks
+[5_Stacks Link](/Anleitungen/5_Stacks/README.md)
 
 # Portainer Stacks
 ## Stacks

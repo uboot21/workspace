@@ -1,3 +1,3 @@
 # Vorbereitungen
-## Lese unter Anleitungen/Docker welche Vorbereitungen gemacht werden müssen bei Portainer
+## Lese unter Anleitungen/Stacks welche Vorbereitungen gemacht werden müssen bei Portainer
 

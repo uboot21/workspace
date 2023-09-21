@@ -33,31 +33,6 @@ docker run -d \
 
 Füge die IP und den Port (9001) hinzu und vergebe einen Namen, ein weiterer Docker wird hinzugefügt
 
-# Stack hinzufügen 
-
-## Authentication
-```
-Euer GitHub Anmelde Namen
-```
-
-## Token: 
-```
-Euer GitHub Token
-```
-
-## Repository URL
-```
-https://github.com/GithubBenutzername/GitHubRespository.git
-```
-
-## Compose path
-Pfad zum & docker-compose.yml
-Zb: 
-Portainer/Stacks/wordpress/docker-compose.yml
-Portainer/Stacks/nginx/docker-compose.yml
-
-## Automatic updates = AN
-
 # Vermeiden von überschneidendnen IP Subnets
 ## Falls der Ping zb ausfällt aus dem Netzwerkbereich liegt es meist an das Geiche Subnet für einen Docker Container
 ```
