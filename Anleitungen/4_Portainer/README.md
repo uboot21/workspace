@@ -1,4 +1,4 @@
-[Hauptseite](workspace/README.md)
+[Hauptseite](/uboot21/workspace/README.md)
 
 # Portainer installieren
 Portainer:
