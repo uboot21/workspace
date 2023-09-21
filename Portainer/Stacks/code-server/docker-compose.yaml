@@ -15,14 +15,14 @@ services:
       - PROXY_DOMAIN=${PROXY_DOMAIN} #optional
       - DEFAULT_WORKSPACE=${DEFAULT_WORKSPACE} #optional
     volumes:
-      - /home/andre/docker/vscode/config:/config
+      - ${LOCAL_PATH1}:/config
     ports:
-      - 9058:8443
-    restart: unless-stopped 
+      - ${SOURCE_PORT}:8443
+    restart: ${RESTART_POLICY}
     labels:
       - 'com.centurylinklabs.watchtower.enable=true'
 networks:
   default:
     ipam:
       config:
-        - subnet: 172.172.0.0/24
+        - subnet: ${IP_SUBNET}
