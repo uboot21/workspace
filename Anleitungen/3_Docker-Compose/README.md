@@ -1,8 +1,14 @@
-# Docker-Compose
-...
+[Hauptseite](/README.md)
 
+# Docker-Compose
+## Installation
+```
+sudo apt-get update
+sudo apt-get install docker-compose-plugin
+```
 ## Networking
 By default Docker-Compose will create a new network for the given compose file. You can change the behavior by defining custom networks in your compose file.
+
 ### Create and assign custom network
 ...
 *Example:*
