@@ -2,12 +2,13 @@
 
 # Stack hinzufügen 
 
-## Authentication
+## Private Resporitory -> Nicht nötig für öffentliche (Keine Passwörter öffentlich speichern hier!)
+### Authentication
 ```
 Euer GitHub Anmelde Namen
 ```
 
-## Token: 
+### Token: 
 ```
 Euer GitHub Token
 ```

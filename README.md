@@ -22,6 +22,9 @@ Unter Anleitungen finden sie Hilfen und Tipps zu einzelnen Punkten. Diese sind n
 ## 5 Stacks
 [5_Stacks Link](/Anleitungen/5_Stacks/README.md)
 
+## 6 VS_Code
+[6_VS_Code Link](/Anleitungen/6_VS_Code/README.md)
+
 # Portainer Stacks
 ## Stacks
 [Portainer Stack Link](/Portainer/Stacks/README.md)
