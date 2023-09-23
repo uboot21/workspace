@@ -53,5 +53,3 @@ networks:
 -> Siehe Installation Watchtower
 
 # Den Ordnernamen inkl. DockerStack und die Dateinamen da drin nicht ändern -> Docker Stack sind mit Portainer verbunden und der Link geht verloren
-
-172.172.xxx.0
