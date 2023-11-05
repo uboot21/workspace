@@ -12,3 +12,10 @@
    Dann auf 'Settings'
    Personal Access Tokens' -> 'Tokens (Classic)'
    Erstelle mit 'Generate new Token' einen neuen Schlüssel und Speichere ihn ab
+
+
+
+
+
+# Code Server Online nutzen
+[code-server Link](3_Server/PortainerStacks/code-server/README.md)
