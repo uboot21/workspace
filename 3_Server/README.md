@@ -1,4 +1,10 @@
-# Vorbereitungen
-## Lese unter Anleitungen/Docker welche Vorbereitungen gemacht werden müssen bei Portainer
+# Hier liegen die Dateien zur Steurerung der Software
 
-[4 Portainer Link](/Anleitungen/4_Portainer/README.md)
+## Docker
+[Docker Link](/Docker/README.md)
+
+## Playbook
+[Playbook Link](/Playbook/README.md)
+
+# Hauptseite
+[Hauptseite Link](/README.md)
