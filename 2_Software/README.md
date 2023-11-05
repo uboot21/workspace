@@ -1,5 +1,8 @@
 # Anleitung für die zu installierende Software
 
+# Hauptseite
+[Hauptseite Link](/README.md)
+
 ## 1 Github
 [1 Github Link](/2_Software/1_GitHub/README.md)
 
@@ -17,6 +20,3 @@
 
 ## 6 VS_Code
 [6_VS_Code Link](/2_Software/6_VS_Code/README.md)
-
-# Hauptseite
-[Hauptseite Link](/README.md)
