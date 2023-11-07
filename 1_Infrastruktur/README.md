@@ -18,3 +18,5 @@
 ## 5 Ansible
 [5_Ansible Link](/1_Infrastruktur/5_Ansible/README.md)
 
+## 6 Alternatives Script Management
+[6_Alternatives_Script_Management Link](/1_Infrastruktur/6_Alternatives_Script_Management/README.md)
