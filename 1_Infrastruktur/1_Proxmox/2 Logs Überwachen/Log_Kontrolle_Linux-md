@@ -1,0 +1,4 @@
+# Kontrolle Log
+## Email
+cat /var/log/mail.log
+

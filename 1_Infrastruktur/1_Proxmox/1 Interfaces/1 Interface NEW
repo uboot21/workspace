@@ -1,0 +1,30 @@
+auto lo
+iface lo inet loopback
+
+iface eno1 inet manual
+
+auto vmbr0
+iface vmbr0 inet static
+	address SERVERIP/26
+	gateway GATEWAYIP
+	bridge-ports eno1
+	bridge-stp off
+	bridge-fd 0
+	post-up iptables -t nat -A PREROUTING -i vmbr0 -p tcp -m multiport ! --dport 22,8006 -j DNAT --to-destination 10.0.0.2
+	post-up iptables -t nat -A PREROUTING -i vmbr0 -p udp -j DNAT --to-destination 10.0.0.2
+
+auto vmbr1
+iface vmbr1 inet static
+	address 10.0.0.1/30
+	bridge-ports none
+	bridge-stp off
+	bridge-fd 0
+	post-up   iptables -t nat -A POSTROUTING -s '10.0.0.0/30' -o vmbr0 -j MASQUERADE
+	post-down iptables -t nat -D POSTROUTING -s '10.0.0.0/30' -o vmbr0 -j MASQUERADE
+
+auto vmbr2
+iface vmbr2 inet static
+	address 10.1.1.1/24
+	bridge-ports none
+	bridge-stp off
+	bridge-fd 0

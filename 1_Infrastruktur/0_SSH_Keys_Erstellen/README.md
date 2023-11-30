@@ -1,4 +1,5 @@
-# Key erstellen Start System
+# Key erstellen Start System (Eigener Linux Rechner)
+
 ```
 ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_MeinKey -C "admin@MeineEmail.de"
 eval "$(ssh-agent -s)"
@@ -24,7 +25,7 @@ Config Datei erstellen / konfigurieren
 ```
 nano ~/.ssh/config
 ```
-Einfügen
+Inhalt Einfügen
 ```
 IdentityFile ~/.ssh/id_MeinKey
 ```
