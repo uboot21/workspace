@@ -10,17 +10,25 @@ Documentation: [Docker Documentation | Docker Documentation](https://docs.docker
 ## Installation
 
 Ein Klick Installations script:
+Tools:
 ```
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
+sudo apt update && sudo apt install ca-certificates curl gnupg lsb-release ntp htop zip unzip gnupg apt-transport-https ca-certificates net-tools ncdu apache2-utils -y
+```
+Docker:
+```
+curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh get-docker.sh
 ```
 
 Run docker as non root user:
 
 ```
-sudo groupadd docker
+sudo groupadd docker 
 sudo usermod -aG docker $USER
 ```
+-> Ausloggen aus dem Shell mit Exit und erneut einloggen!
+
+------------------------------------ Ende der Installation ------------------------------------ 
+
 
 ## Bei Bedarf kann zum Testen ein lokaler Docker Server installiert werden, es sollte aber ein Linux Server benutzt werden
 Install Docker Engine : [Docker Engine](https://docs.docker.com/engine/install/)
