@@ -131,3 +131,19 @@ Leer lassen
 #### Tunnel IPv6 Address
 Leer lassen
 
+#### Nach klick auf "Add Device" Wird einem ein QR Code angezeigt, sowie die Wireguard Zugangskonfiguration für das zu verbindende Gerät
+Es wird eine Warnmeldung angezeigt:
+```
+NOTE: This configuration WILL NOT be viewable again. Please ensure you've downloaded the configuration file or copied it somewhere safe before closing this window.
+```
+Mit Klick auf Download Configuration kann man das Setup File herunter laden
+
+-> Das Gerät kann man mit Klick auf das Gerät und "Delete" wieder löschen
+-> Man muss nicht für jeden Nutzer auch einen eigenen User einrichten, dies ist nur notwendig wenn man unterschiedliche Rechte vergeben möchte
+
+### Softwae für die Clients
+Die entsprechenden Clients kann man sich hier herunter laden 
+```
+https://www.wireguard.com/install/
+```
+
