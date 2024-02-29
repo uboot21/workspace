@@ -22,14 +22,17 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 ```
 
+## Bei Bedarf kann zum Testen ein lokaler Docker Server installiert werden, es sollte aber ein Linux Server benutzt werden
 Install Docker Engine : [Docker Engine](https://docs.docker.com/engine/install/)
+
+# Anleitung der Kommandos
 
 ---
 ## Build Images
 
 
 ---
-## Docker CLI
+## Docker CLI Kommandos
 
 **Run Containers**
 
