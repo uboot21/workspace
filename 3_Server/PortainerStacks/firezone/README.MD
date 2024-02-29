@@ -34,12 +34,13 @@ cd /root/.firezone
 
 ```
 
-#### hier im Github Verzeichnis eine Besipiel Datei "docker-compose.yml" mit den Variablen ".env", man findet diese im Verzeichnis .firezone und kann sie selber abändern -> In der Datei findet man auch das Passwort für den login
+#### hier im Github Verzeichnis ist eine Besipiel Datei "docker-compose.yml" mit den ".env" Datei für die Variablen, man findet diese im Verzeichnis .firezone und kann sie selber abändern -> In der Datei findet man auch das Passwort für den login, dies braucht nach der Erstellung aber nicht 
 
 
 ## Konfiguration Firezone
-### Aufruf mit der Hostname DNS und Eingabe der EMail mit dem Passwort aus der ".env" Datei
+#### Aufruf der Webseite mit der Hostname-DNS und Login mit der EMail und mit dem Passwort aus der ".env" Datei bzw. die einem am Ende der Installationangezeigt wird.
 
+### Menüs
 ### Menü Defaults
 #### Allowed IPs
 ```
