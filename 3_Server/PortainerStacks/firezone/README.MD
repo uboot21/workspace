@@ -21,19 +21,20 @@ Could we email you to ask for product feedback? Firezone depends heavily on inpu
 Firezone collects crash and performance logs to help us improve the product. Would you like to disable this? (N/y):  => Y
 Press <ENTER> to install or Ctrl-C to abort.  => Enter eingeben
 ```
-### Das Docker compose File befindet sich lokal im Usser Folder (/home/$USER oder /root) im Unterordner verstecktem Unterverzeichnid .firezone
+### Das Docker compose File befindet sich lokal im Usser Folder (/home/$USER oder /root) iin einem verstecktem Unterordner -> .firezone
 Zugang zum Verzeichnis für User:
 
 ```
 cd /home/$USER/.firezone
 
 ```
-Zugang zum Verzeichnis für Root:
+Zugang zum Verzeichnis für Root User:
 ```
 cd /root/.firezone
 
 ```
-#### hier im Verzeichnis eine Besipiel Datei "docker-compose.yml" mit den Variablen ".env", man findet diese im Verzeichnis .firezone und kann sie selber abändern -> In der Datei findet man auch das Passwort für den login
+
+#### hier im Github Verzeichnis eine Besipiel Datei "docker-compose.yml" mit den Variablen ".env", man findet diese im Verzeichnis .firezone und kann sie selber abändern -> In der Datei findet man auch das Passwort für den login
 
 
 ## Konfiguration Firezone
