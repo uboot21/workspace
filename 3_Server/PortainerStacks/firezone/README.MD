@@ -38,7 +38,7 @@ cd /root/.firezone
 
 
 ## Konfiguration Firezone
-#### Aufruf der Webseite mit der Hostname-DNS und Login mit der EMail und mit dem Passwort aus der ".env" Datei bzw. die einem am Ende der Installationangezeigt wird.
+#### Aufruf der Webseite mit Eingabe der Hostname-DNS (z.b. https://firezone.server.de) und Login mit der EMail und mit dem Passwort aus der ".env" Datei bzw. die einem am Ende der Installationangezeigt wird.
 
 ### Menüs
 ### Menü Defaults
