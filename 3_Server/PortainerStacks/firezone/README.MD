@@ -47,6 +47,7 @@ cd /root/.firezone
 Erklärung:
 0.0.0.0/0, ::/0   -> Zugang zum Internet
 192.168.0.0/16 -> Zugang zum privatem Netzwerk falls man mit dem Heimnetz in ein VPS nernetzt ist, den IP Bereich kann man individuell anpassen, zb. 192.168.178.0/24
+Hier wird konfiguriert was das System an sich erreichen soll, weiter unten wird beschrieben was der einzelne User mit welchem Gerät erreichen darf,
 
 #### DNS Servers
 ```
@@ -79,6 +80,54 @@ Braucht nicht verändert werden
 ### Menü Account
 Hier kann der Benutzername und das Passwort geändert werden
 
+### Menü Customization
+Hier kann man das Logo ändern
 
+### Menü Security
+Require Authentication For VPN Sessions     =   Never
+Local Auth                                  =   Ein
+Allow unprivileged device management        =   Ein
+Allow unprivileged device configuration     =   Ein
+Auto disable VPN                            =   Aus
 
+### Menü Rules
+Allowlist
+Denylist
+-> Hier kann man individuell für verschiedene Benutzer Geräte oder Ziele freigeben oder sperren, wenn man nichts extra sperren möchte, kann man die Zugänge wie oben unter Allowed Ip´s beschrieben einstellen.
+
+### Menü Devices
+Hier sieht man später die einzelnen Devices, ob sie verbunden sind, was sie übertragen haben usw.
+
+### Menü Users
+Klicke auf den angelegten Benutzer und dann auf "Add Device"
+
+#### Name
+Eindeutiger Name, zb: "Handy-Privat-Iphone-12"
+
+#### Description
+Beschreibung, z.b. Privat Handy der Frau
+
+#### Use Default Allowed IPs
+Man kann hier Yes wählen oder den Zugang einschränken, zb nur "0.0.0.0/0, ::/0" für Zugang Internet, aber kein Netzwerk
+
+#### Use Default DNS Servers
+Hier kann man einen anderen DNS Server eingeben, Standard. wäre "Yes"
+
+#### Use Default Endpoint
+"Yes"
+
+#### Use Default MTU
+"Yes"
+
+#### Use Default Persistent Keepalive
+"Yes"
+
+#### Use Default Endpoint
+"Yes"
+
+#### Tunnel IPv4 Address
+Leer lassen
+
+#### Tunnel IPv6 Address
+Leer lassen
 
