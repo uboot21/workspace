@@ -110,7 +110,7 @@ Allowlist
 
 Denylist
 
--> Hier kann man individuell für verschiedene Benutzer Geräte oder Ziele freigeben oder sperren, wenn man nichts extra sperren möchte, kann man die Zugänge wie oben unter Allowed Ip´s beschrieben einstellen.
+-> Hier kann man individuell für verschiedene Benutzer Geräte oder Ziele freigeben oder sperren, wenn man nichts extra sperren möchte, kann man die Zugänge wie oben unter Allowed Ip´s beschrieben unter allowed hinzufügen.
 
 ### Menü Devices
 Hier sieht man später die einzelnen Devices, ob sie verbunden sind, was sie übertragen haben usw.
