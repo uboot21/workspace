@@ -18,7 +18,7 @@ Could we email you to ask for product feedback? Firezone depends heavily on inpu
 Firezone collects crash and performance logs to help us improve the product. Would you like to disable this? (N/y):  => Y
 Press <ENTER> to install or Ctrl-C to abort.  => Enter eingeben
 ```
-### Das Docker compose File befindet sich lokal im Usser Folder (/home/$USER oder /root) iin einem verstecktem Unterordner -> .firezone
+### Das Docker compose File befindet sich lokal im User Folder (/home/$USER oder /root) iin einem verstecktem Unterordner -> .firezone
 Zugang zum Verzeichnis für User:
 
 ```
