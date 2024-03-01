@@ -47,8 +47,11 @@ cd /root/.firezone
 0.0.0.0/0, ::/0, 192.168.0.0/16
 ```
 Erklärung:
+
 0.0.0.0/0, ::/0   -> Zugang zum Internet
+
 192.168.0.0/16 -> Zugang zum privatem Netzwerk falls man mit dem Heimnetz in ein VPS nernetzt ist, den IP Bereich kann man individuell anpassen, zb. 192.168.178.0/24
+
 Hier wird konfiguriert was das System an sich erreichen soll, weiter unten wird beschrieben was der einzelne User mit welchem Gerät erreichen darf,
 
 #### DNS Servers
@@ -56,6 +59,7 @@ Hier wird konfiguriert was das System an sich erreichen soll, weiter unten wird 
 1.1.1.1, 1.0.0.1
 ```
 Erklärung:
+
 Beliebige DNS Server hier eintragen, falls man sein Heimnetz mit diesem Server verbunden hat, kann man auch eigene DNS Server eintragen wie z.b. PiHole
 
 #### Endpoint
@@ -63,6 +67,7 @@ Beliebige DNS Server hier eintragen, falls man sein Heimnetz mit diesem Server v
 firezone.server.de:51820
 ```
 Erklärung:
+
 Hier kommt der Hostname DNS mit Doppelpunkt und dem UDP Port für den Wireguard Zugang rein
 
 #### Persistent Keepalive
@@ -70,6 +75,7 @@ Hier kommt der Hostname DNS mit Doppelpunkt und dem UDP Port für den Wireguard 
 25
 ```
 Erklärung:
+
 Anzahl Sekunden in dem der Server prüft ob er online ist
 
 #### MTU
@@ -77,6 +83,7 @@ Anzahl Sekunden in dem der Server prüft ob er online ist
 1280
 ```
 Erklärung:
+
 Braucht nicht verändert werden
 
 ### Menü Account
@@ -86,15 +93,23 @@ Hier kann der Benutzername und das Passwort geändert werden
 Hier kann man das Logo ändern
 
 ### Menü Security
+
 Require Authentication For VPN Sessions     =   Never
+
 Local Auth                                  =   Ein
+
 Allow unprivileged device management        =   Ein
+
 Allow unprivileged device configuration     =   Ein
+
 Auto disable VPN                            =   Aus
+
 
 ### Menü Rules
 Allowlist
+
 Denylist
+
 -> Hier kann man individuell für verschiedene Benutzer Geräte oder Ziele freigeben oder sperren, wenn man nichts extra sperren möchte, kann man die Zugänge wie oben unter Allowed Ip´s beschrieben einstellen.
 
 ### Menü Devices
@@ -141,6 +156,7 @@ NOTE: This configuration WILL NOT be viewable again. Please ensure you've downlo
 Mit Klick auf Download Configuration kann man das Setup File herunter laden
 
 -> Das Gerät kann man mit Klick auf das Gerät und "Delete" wieder löschen
+
 -> Man muss nicht für jeden Nutzer auch einen eigenen User einrichten, dies ist nur notwendig wenn man unterschiedliche Rechte vergeben möchte
 
 ### Softwae für die Clients
