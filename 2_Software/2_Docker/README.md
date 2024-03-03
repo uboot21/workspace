@@ -24,6 +24,8 @@ Run docker as non root user:
 ```
 sudo groupadd docker 
 sudo usermod -aG docker $USER
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
 ```
 -> Ausloggen aus dem Shell mit Exit und erneut einloggen!
 
