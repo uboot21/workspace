@@ -7,7 +7,7 @@
 [Docker Link](/3_Server/Docker/README.md)
 
 ## Playbook
-[Playbook Link](/3_Server/Playbook/README.md)
+[Playbook Link](/3_Server/Playbooks/README.md)
 
 ## Portainer Stacks
 [PortainerStacks Link](/3_Server/PortainerStacks/README.md)
