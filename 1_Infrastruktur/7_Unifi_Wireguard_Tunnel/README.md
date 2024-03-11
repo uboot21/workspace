@@ -1,18 +1,26 @@
 # Hauptseite
 [Hauptseite Link](/README.md)
 
+# Legende
+## VPS = Virtual Private Server, zb Ionos VPS XS
+https://www.ionos.de/server/vps#tarife
+## Wireguard = Sicheres und schnelles VPN Protokoll über UDP -> wesentlich schlanker und  schneller, da in vielen Linux Kernel bereits integriert
+
 # Setup Unifi UDM Pro
 ## Menü
-gehe auf -> System -> VPN -> VPN Client
-
-
-
-
-
-
-
-
-
+- Gehe auf -> System -> VPN -> VPN Client -> Create NEW
+- Klicke auf Wireguard oben
+- Vergebe einen Namen zb Wireguard VPS Server
+- Klicke auf "manual"
+- Private Key und Public Key werden bereits mit Pünktchen angezeigt, den Public Key kann man mit "Copy" kopieren und für den File unten auf dem VPS einfügen 
+- Tunnel IP = 10.10.10.2 und Netmask 32
+- Server Address = IP oder FQDN des VPS
+- Port = 55120
+- Public Server Key = Key der unten auf dem VPS Server erstellt wurde
+- Pre-Shared Key = LEER
+- Primary DNS server = DNS Server, das kann auch ein lokaler PiHole server sein oder ein  DNS Server auf einer NAS, ansonsten einen öffentlichen nehmen zb 8.8.8.8 oder 1.1.1.1
+- Secondary DNS server = Hier kann ein zweiter eingegeben werden, falls der erste nicht erreichbar ist
+- Mit "Apply Changes" wird der Client gestartet, falls der Server auf der VPS bereits läuft, wird die Verbindung in wenigen Sekunden aufgebaut und die Verbidung leuchtet grün
 
 # VPS Server Ionos
 ## Setup VPS Client
