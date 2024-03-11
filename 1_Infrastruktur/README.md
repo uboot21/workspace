@@ -20,3 +20,7 @@
 
 ## 6 Alternatives Script Management
 [6_Alternatives_Script_Management Link](/1_Infrastruktur/6_Alternatives_Script_Management/README.md)
+
+## 7 Unifi Verbindung zu VPS mit Wireguard
+[7_Unifi_Wireguard_Tunnel Link](/1_Infrastruktur/7_Unifi_Wireguard_Tunnel/README.md)
+
