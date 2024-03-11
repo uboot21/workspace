@@ -29,7 +29,7 @@ https://www.ionos.de/server/vps#tarife
 Auf dem VPS wird ein Ubuntu installiert, in den Einstellungen der Firewall unter Netzwerk wird der Port 22 TCP geöffnet und der Wireguard Port (in unserem Beispiel 55120 UDP).
 Nach Aufbau der Verbindung kann auch die Ionos Firewall Port 22 geschlossen werden (falls man Services von aussen auf dem VPS später hinzufügen möchte, dann muss der entsprechende Port geöffnet werden).
 Bei späterer Einrichtung eines Firezone Servers 
-[PortainerStacks Firezone Link](uboot21/workspace/3_Server/PortainerStacks/firezone/README.MD)
+[PortainerStacks Firezone Link](3_Server/PortainerStacks/firezone/README.MD)
 sollte man auch Port 80/443 öffnen.
 
 ## Installieren von Wireguard (falls nicht vorhanden)
