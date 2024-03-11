@@ -4,11 +4,11 @@
 [Hauptseite Link](/README.md)
 
 ## Docker
-[Docker Link](/Docker/README.md)
+[Docker Link](/3_Server/Docker/README.md)
 
 ## Playbook
-[Playbook Link](/Playbook/README.md)
+[Playbook Link](/3_Server/Playbook/README.md)
 
 ## Portainer Stacks
-[PortainerStacks Link](/PortainerStacks/README.md)
+[PortainerStacks Link](/3_Server/PortainerStacks/README.md)
 
