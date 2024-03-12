@@ -22,6 +22,16 @@ https://www.ionos.de/server/vps#tarife
 - Secondary DNS server = Hier kann ein zweiter eingegeben werden, falls der erste nicht erreichbar ist
 - Mit "Apply Changes" wird der Client gestartet, falls der Server auf der VPS bereits läuft, wird die Verbindung in wenigen Sekunden aufgebaut und die Verbidung leuchtet grün
 
+## Setup Firewall
+- Die Einstellung ist eigentlich NICHT korrekt für Unifi und ich hoffe sie ändern das noch einmal. Eigentlich müsste die Firewall Regel als Eingang den VPN Client haben, aber die Möglichkeit besteht NICHT. Also müssen wir uns hier mit einer "Behelfslösung" momentan zufrieden geben.
+- Es empfiehlt sich 2 Profile Anzulegen, einmal für die IP der Wireguard Adresse auf dem VPS (oder mehreren wenn man ein Mesh hat), dann eine Gruppe mit den IP Netzwerken oder einzelnen IP für Geräte auf die über Wireguard zugegriffen werden darf, fals das alle Geräte sein sollen, kann man hier auch den Bereich für ALLE privaten Adressen nehmen, evtl. habt ihr diesen IP Bereich bereits angelegt (10.0.0.0/8 & 172.16.0.0/12 & 192.168.0.0/16)
+- Gehe in Settings -> Security -> Firewall Rules
+- Gehe auf Internet und Create new Rule, wähle Internet In
+-  Protocol sind Alle, Der Source ist die Gruppe der IPs von den Wireguard Adressen die rein. dürfen, also der VPS
+- Ports sind bei Source und Destination any, als Ziel gibt man die Gruppe der IP an, welche erreicht werden dürfen.
+P.S.: Ihr solltet hier evtl. den Adressbereich des Wireguard Tunnel verändern, damit niemand diesen Bereich kennt und versuchen kann sich damit einzuloggen.
+
+
 # VPS Server Ionos
 ## Setup VPS Client
 
