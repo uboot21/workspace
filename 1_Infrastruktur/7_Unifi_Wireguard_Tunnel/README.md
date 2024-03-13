@@ -117,7 +117,7 @@ sudo systemctl stop wg-quick@unifi && sudo systemctl disable wg-quick@unifi && s
 #### Forward zu einem Server 192.168.0.230 (Beispiel) mit PORT 1234 (Beispiel)
 #### Öffne auf dem VPS den gewünschten Port in der Firewall 1234 (Beispiel)
 #### in dem Wireguard Konfiguration unifi.conf auf dem VPS hinzuzufügen
-#### ens6 ist die Netzwerkkarte des VPS und entsprechend zu ändern (z.b. ETHO0, etc...)
+#### ens6 ist die Netzwerkkarte des VPS und entsprechend zu ändern (z.b. ETH0, etc...)
 #### Wichtig: Das Endgerät ist für die Sicherheit verantwortlich, da alle anfragen an die IP4 des VPS direkt an den Server weitergeleitet werden
 
 ```
