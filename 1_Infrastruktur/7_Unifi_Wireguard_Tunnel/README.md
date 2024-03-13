@@ -130,3 +130,20 @@ PostDown = iptables -D FORWARD -i unifi -o ens6 -m conntrack --ctstate ESTABLISH
 PostDown = iptables -t nat -D PREROUTING -i ens6 -p tcp --dport 1234 -j DNAT --to-destination 192.168.0.230
 PostDown = iptables -t nat -D POSTROUTING -o unifi -p tcp --dport 1234 -d 192.168.0.230 -j SNAT --to-source 192.168.0.230
 ```
+
+# Ohne Firezone ein Mobiles Gerät hinzufügen
+- Folge der Anleitung oben "## Setup VPS Client", Tausche aber Port und Tunnel IP aus zb. Port 55121 und Tunnel IP 10.10.11.2.
+- Vergiß nicht den Port auf der IONOS Firewall frei zu geben. Tausche in den Namen das unifi.conf gegen zb. handy.conf aus.
+- Auf dem Handy starte die Wireguard Software und klicke auf das + oben rechts.
+- Wähle "selbst erstellen" und vergebe einen Namen
+- Klicke Schlüsselpaar erzeugen und kopiere den öffentlichen Schlüssel für die Datei handy.conf
+- Füge die IP / DNS deines VPS ein, gebe den Port (55121) ein und gebe MTU 1280 ein, DNS Server die gleichen wie im anderem Setup.
+- Klicke auf Peer hinzufügen und gebe hier den neuen öffentlichen Schlüssel vom VPS ein
+- Zulässige IP´s wären hier jetzt die 10.10.11.0/24, !!!192.168.0.0/24 -> Hier die IP Netze der UDM Pro rein wodrauf zugegriffen werden darf!!!
+- Keepalive kann auf 25 gesetzt werden. Klicke am Handy auf sichern, starte den Server auf der VPS und klicke die Verbindung in dem Handy an. Die Verbindung sollte erstellt werden
+
+### Testen ob Verbindung korrekt läuft
+- Klicke nach dem Verbinden auf den Namen der Verbindung, unten sieht man Daten empfangen, Daten gesendet und Letzer Handshake -> Alle drei sollten hier eine Änderung von zumindest ein paar kb anzeigen. Die Verbindung mit dem VPS steht.
+- Um die Verbindung mit dem Unifi zu testen, logge dich per ssh auf dem VPS ein und setzte ein PING an ein Gerät im Netzwerk ab. Die Pings sollten ankommen.
+- Versuche vom Handy aus auf z.b. einer Webseite im Netzwerk zuzugreifen.
+
