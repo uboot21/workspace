@@ -24,7 +24,7 @@ https://www.ionos.de/server/vps#tarife
 
 ## Setup Firewall
 - Die Einstellung ist eigentlich NICHT korrekt für Unifi und ich hoffe sie ändern das noch einmal. Eigentlich müsste die Firewall Regel als Eingang den VPN Client haben, aber die Möglichkeit besteht NICHT. Also müssen wir uns hier mit einer "Behelfslösung" momentan zufrieden geben.
-- Es empfiehlt sich 2 Profile Anzulegen, einmal für die IP der Wireguard Adresse auf dem VPS (oder mehreren wenn man ein Mesh hat), dann eine Gruppe mit den IP Netzwerken oder einzelnen IP für Geräte auf die über Wireguard zugegriffen werden darf, fals das alle Geräte sein sollen, kann man hier auch den Bereich für ALLE privaten Adressen nehmen, evtl. habt ihr diesen IP Bereich bereits angelegt (10.0.0.0/8 & 172.16.0.0/12 & 192.168.0.0/16)
+- Es empfiehlt sich 2 Profile in der UDM Pro Firewall Anzulegen, einmal für die IP der Wireguard Adresse auf dem VPS (10.10.10.1) oder mehreren IP wenn man ein Mesh Netzwerk hat, dann eine Gruppe mit den IP Netzwerken oder einzelnen IP für Geräte auf die über Wireguard zugegriffen werden darf, fals das alle Geräte sein sollen, kann man hier auch den Bereich für ALLE privaten Adressen nehmen, evtl. habt ihr diesen IP Bereich bereits angelegt (10.0.0.0/8 & 172.16.0.0/12 & 192.168.0.0/16)
 - Gehe in Settings -> Security -> Firewall Rules
 - Gehe auf Internet und Create new Rule, wähle Internet In
 -  Protocol sind Alle, Der Source ist die Gruppe der IPs von den Wireguard Adressen die rein. dürfen, also der VPS
