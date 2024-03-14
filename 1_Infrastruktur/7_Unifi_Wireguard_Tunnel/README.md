@@ -2,9 +2,11 @@
 [Hauptseite Link](/README.md)
 
 # Legende
-## VPS = Virtual Private Server, zb Ionos VPS XS
+### VPS = Virtual Private Server, zb Ionos VPS XS
 https://www.ionos.de/server/vps#tarife
-## Wireguard = Sicheres und schnelles VPN Protokoll über UDP -> wesentlich schlanker und  schneller, da in vielen Linux Kernel bereits integriert
+### Wireguard = Sicheres und schnelles VPN Protokoll über UDP -> wesentlich schlanker und  schneller, da in vielen Linux Kernel bereits integriert
+# Vorraussetungen in diesem Setup
+### Diese Anleitung bezieht sich auf einer Unifi UDM Pro im Heimnetzwerk und einem VPS im Internet mit fester IP4 und einem installiertem Ubuntu. Die Anleitung lässt sich natürlich auch mit anderer Hard & Software einsetzen, allerdings sind dann nicht alle Befehle und Einstellungen identisch.
 
 # Setup Unifi UDM Pro
 ## Menü
@@ -131,7 +133,7 @@ PostDown = iptables -t nat -D PREROUTING -i ens6 -p tcp --dport 1234 -j DNAT --t
 PostDown = iptables -t nat -D POSTROUTING -o unifi -p tcp --dport 1234 -d 192.168.0.230 -j SNAT --to-source 192.168.0.230
 ```
 
-# Ohne Firezone ein Mobiles Gerät hinzufügen
+# Ohne Firezone ein Mobiles Gerät hinzufügen (Empfohlen wird hier aber ein Docker mit Firezone Container oder einem anderem Wireguard Zugang mit grafischer Oberfläche zur einfacheren Verwaltung)
 - Folge der Anleitung oben "## Setup VPS Client", Tausche aber Port und Tunnel IP aus zb. Port 55121 und Tunnel IP 10.10.11.2.
 - Vergiß nicht den Port auf der IONOS Firewall frei zu geben. Tausche in den Namen das unifi.conf gegen zb. handy.conf aus.
 - Auf dem Handy starte die Wireguard Software und klicke auf das + oben rechts.
