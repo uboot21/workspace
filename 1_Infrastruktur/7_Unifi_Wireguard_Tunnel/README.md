@@ -119,6 +119,21 @@ sudo systemctl stop wg-quick@unifi && sudo systemctl disable wg-quick@unifi && s
 ```
 sudo wg
 ```
+- Der Status zigt folgendes:
+```
+interface: unifi
+  public key: 
+  private key: (hidden)
+  listening port: 55120
+
+peer: 
+  endpoint: IP:Ausgehandelter Port
+  allowed ips: 
+  latest handshake: 7 seconds ago
+  transfer: 30.43 kB received, 93.85 kB sent
+```
+- Unten im Status transfer sollten bei gesendet sowie empfangen etwas stehen, falls das nicht der Fall ist, dann ist die Verbindung nicht korrekt aufgebaut.
+
 
 # Zusätzlich feste Ports direkt an einen Server weiterleiten
 #### Forward zu einem Server 192.168.0.230 (Beispiel) mit PORT 1234 (Beispiel)
