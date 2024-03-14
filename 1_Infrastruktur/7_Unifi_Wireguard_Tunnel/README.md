@@ -154,7 +154,7 @@ PostDown = iptables -t nat -D POSTROUTING -o unifi -p tcp --dport 1234 -d 192.16
 ```
 
 # Ohne Firezone ein Mobiles Gerät hinzufügen (Empfohlen wird hier aber ein Docker mit Firezone Container oder einem anderem Wireguard Zugang mit grafischer Oberfläche zur einfacheren Verwaltung)
-- Folge der Anleitung oben "## Setup VPS Client", Tausche aber Port und Tunnel IP aus zb. Port 55121 und Tunnel IP 10.10.11.2.
+- Folge der Anleitung oben "## Setup VPS Client", Tausche aber Port und Tunnel IP aus zb. Port 55121 und Tunnel IP 10.10.11.2. gebe sonst keine adressen unter Allowed Ip hier ein.
 - Vergiß nicht den Port auf der IONOS Firewall frei zu geben. Tausche in den Namen das unifi.conf gegen zb. handy.conf aus.
 - Auf dem Handy starte die Wireguard Software und klicke auf das + oben rechts.
 - Wähle "selbst erstellen" und vergebe einen Namen
