@@ -159,7 +159,7 @@ PostDown = iptables -t nat -D POSTROUTING -o unifi -p tcp --dport 1234 -d 192.16
 - Auf dem Handy starte die Wireguard Software und klicke auf das + oben rechts.
 - Wähle "selbst erstellen" und vergebe einen Namen
 - Klicke Schlüsselpaar erzeugen und kopiere den öffentlichen Schlüssel für die Datei handy.conf
-- Füge die IP / DNS deines VPS ein, gebe den Port (55121) ein und gebe MTU 1280 ein, DNS Server die gleichen wie im anderem Setup.
+- Füge die IP / DNS deines VPS unter Endpunkt ein, gebe den Port (55121) mit Doppelpunkt hinter der Adresse ein und gebe MTU 1280 ein, DNS Server die gleichen wie im anderem Setup.
 - Klicke auf Peer hinzufügen und gebe hier den neuen öffentlichen Schlüssel vom VPS ein
 - Zulässige IP´s wären hier jetzt die 10.10.11.0/24, !!!192.168.0.0/24 -> Hier die IP Netze der UDM Pro rein wodrauf zugegriffen werden darf!!!
 - Keepalive kann auf 25 gesetzt werden. Klicke am Handy auf sichern, starte den Server auf der VPS und klicke die Verbindung in dem Handy an. Die Verbindung sollte erstellt werden
