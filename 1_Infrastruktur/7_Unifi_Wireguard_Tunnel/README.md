@@ -115,6 +115,11 @@ sudo systemctl stop wg-quick@unifi && sudo systemctl disable wg-quick@unifi
 sudo systemctl stop wg-quick@unifi && sudo systemctl disable wg-quick@unifi && sudo systemctl start wg-quick@unifi && sudo systemctl enable wg-quick@unifi
 ```
 
+# Testen ob Wireguard läuft
+```
+sudo wg
+```
+
 # Zusätzlich feste Ports direkt an einen Server weiterleiten
 #### Forward zu einem Server 192.168.0.230 (Beispiel) mit PORT 1234 (Beispiel)
 #### Öffne auf dem VPS den gewünschten Port in der Firewall 1234 (Beispiel)
