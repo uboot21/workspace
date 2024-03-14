@@ -119,16 +119,16 @@ sudo systemctl stop wg-quick@unifi && sudo systemctl disable wg-quick@unifi && s
 ```
 sudo wg
 ```
-- Der Status zigt folgendes:
+- Der Status zeigt folgendes:
 ```
 interface: unifi
-  public key: 
+  public key: (KEY)
   private key: (hidden)
   listening port: 55120
 
-peer: 
-  endpoint: IP:Ausgehandelter Port
-  allowed ips: 
+peer: (KEY)
+  endpoint: IP:AusgehandelterPort
+  allowed ips: Die Erlaubten IP Bereiche
   latest handshake: 7 seconds ago
   transfer: 30.43 kB received, 93.85 kB sent
 ```
