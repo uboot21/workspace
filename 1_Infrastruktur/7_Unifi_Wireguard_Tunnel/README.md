@@ -147,6 +147,6 @@ PostDown = iptables -t nat -D POSTROUTING -o unifi -p tcp --dport 1234 -d 192.16
 - Um die Verbindung mit dem Unifi zu testen, logge dich per ssh auf dem VPS ein und setzte ein PING an ein Gerät im Netzwerk ab. Die Pings sollten ankommen.
 - Versuche vom Handy aus auf z.b. einer Webseite im Netzwerk zuzugreifen.
 
-# Zugang zum internem Netzwerk des VPS bzw auf Netzwerkbereiche hinter dem VPS
+# Zugang aus dem Heimnetz zum internem Netzwerk des VPS bzw auf Netzwerkbereiche hinter dem VPS
 - Um sich aus dem Unifi Netzerk auf die IP des Wireguard zu verbinden, muss man eine "Traffic Route" Weiterleitung einrichten in der UDM Pro, zb das Netzwerk 10.10.10.0/24 oder die IP 10.10.10.1/32 unter IP eintragen und als Interface wählt man den Tunnel zum VPS aus.
 - Falls man sich zu Netzwerken hinter dem VPS verbinden möchte, weil man mehrere Rechner zu einem Mesh System miteinander verbunden hat, muss man in der UDM Pro eine Static Route einrichten mit den Ziel IP und der IP des UDM Pro Tunnel als Next Hop (10.10.10.2)
