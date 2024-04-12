@@ -21,5 +21,6 @@ sudo chmod 700 /home/andre/.ssh && sudo chmod 600 /home/andre/.ssh/*
 sudo chown andre:andre /home/andre/.ssh/
 sudo chown andre:andre /home/andre/.ssh/*
 echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC/9+hLVbx6nv+v8nhXYxlRvMrUnywzrfiOxuKMhxeDV ansible.ionos@andrejansen.de"  | sudo tee -a /home/andre/.ssh/authorized_keys >/dev/null
+echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEf0jw3vskLjPylI5/HQBESSVorT5DXEBzyC/nYMQh3X admin@andrejansen.de"  | sudo tee -a /home/andre/.ssh/authorized_keys >/dev/null
 
 sudo service ssh restart
