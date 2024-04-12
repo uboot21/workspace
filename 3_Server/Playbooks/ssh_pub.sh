@@ -1,5 +1,8 @@
 #!/bin/bash
 
+## Dieses Script auf github "Workspace" fügt mein Public Key für Ansible Server hinzu
+## Danach kann der Rechner meinem Ansible Host hinugefügt werden, das Ansible Script macht dann den Rest
+
 # root
 mkdir -p /root/.ssh
 sudo touch /root/.ssh/authorized_keys
