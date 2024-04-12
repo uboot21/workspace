@@ -4,6 +4,7 @@
 ## Danach kann der Rechner meinem Ansible Host hinugefügt werden, das Ansible Script macht dann den Rest
 ## Installieren mit
 ## sudo apt-get -y update && sudo apt-get -y upgrade && sudo apt-get autoremove -y && sudo apt install wget -y && wget https://raw.githubusercontent.com/uboot21/workspace/master/3_Server/Playbooks/ssh_pub.sh && sudo chmod +x ssh_pub.sh && sudo ./ssh_pub.sh && sudo rm ssh_pub.sh
+## User andre nur, falls auf Server der root Zugang gesperrt ist
 
 # root
 mkdir -p /root/.ssh
