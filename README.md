@@ -11,6 +11,8 @@ Viele der Server sind nicht offen, es wird ein eigener Authelia Authentifizierun
 
 Es gibt hier Anleitungen und Hilfen sowie Tipps zu den einzelnen Punkten. Diese sind nicht immer vollständig und dienen mir der Unterstützung bei der Fehlersuche oder Neuinstallation von Server & Software. Oftmals werden anderweitige Kenntnisse vorausgesetzt, um die Hilfen aber übersichtlich zu gestalten beschränke ich mich aufs wesentliche oder verweise auf andere Seiten.
 
+### Da sich meine Server Struktur schneller ändert als ich den Aufbau der Anleitungen erstellen kann, sind viele Punkte offen, bei Fragen zu offenen "Themen" schreibt mich einfach an "info@andrejansen.de"
+
 # Hauptmenü
 
 ## 1 Infrastruktur
