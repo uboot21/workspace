@@ -32,7 +32,7 @@ https://www.ionos.de/server/vps#tarife
 -  Protocol sind Alle, Der Source ist die Gruppe der IPs von den Wireguard Adressen die rein. dürfen, also der VPS
 - Ports sind bei Source und Destination any, als Ziel gibt man die Gruppe der IP an, welche erreicht werden dürfen.
 P.S.: Ihr solltet hier evtl. den Adressbereich des Wireguard Tunnel verändern, damit niemand diesen Bereich kennt und versuchen kann sich damit einzuloggen.
-- Gehe dann erneut auf Internet und Create new Rule, wählt Internet Local aus und stell das gleiche wie bei Internet in nochmal ein
+- Gehe dann erneut auf Internet und Create new Rule, wähle Internet Local aus und stelle das gleiche wie bei Internet in nochmal ein
 
 # VPS Server Ionos
 ## Setup VPS Client
